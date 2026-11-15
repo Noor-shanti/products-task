@@ -11,7 +11,7 @@ export default function Products() {
 
     const getProducts = async () => {
         try {
-            const response = await axios.get('https://dummyj55son.com/products');
+            const response = await axios.get('https://dummyjson.com/products');
             setProducts(response.data.products);
         } catch {
             setError('error to load data');
